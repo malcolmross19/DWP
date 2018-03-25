@@ -1,0 +1,47 @@
+<!--
+Name: Malcolm Ross
+Assignment: MVC with Events
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blood Glucose Tracker</title>
+    <meta name="description" content="API Project">
+    <meta name="author" content="Malcolm Ross">
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
+</head>
+<body>
+    <div class="container">
+        <form id="glucoseTracker" onsubmit="return false;">
+            <h3>Glucose Tracker</h3>
+            <h4>Enter Your Information Below</h4>
+
+            <div class="error" id="nameError"></div>
+            <fieldset>
+                <input placeholder="Your Name" type="text" id="name" tabindex="1" required autofocus />
+            </fieldset>
+
+            <div class="error" id="typeError"></div>
+            <fieldset>
+                <select name="name" id="type" tabindex="2" required autofocus>
+                    <option value="" selected>Select Diabetes Type</option>
+                    <option value="Type 1 Diabetes">Type 1 Diabetes</option>
+                    <option value="Type 2 Diabetes">Type 2 Diabetes</option>
+                </select>
+            </fieldset>
+
+            <div class="error" id="glucoseError"></div>
+            <fieldset>
+                <input placeholder="Enter Blood Glucose Values" type="text" id="glucose" tabindex="3" required autofocus />
+            </fieldset>
+
+            <button name="submit" type="submit" id="submit" onclick="return false;">Submit</button>
+        </form>
+        <div id="glucoseData"></div>
+    </div>
+<script src="js/utils.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

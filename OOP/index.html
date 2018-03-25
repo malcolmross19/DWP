@@ -1,0 +1,72 @@
+<!-- Name: Malcolm Ross -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment 1 - Python and OOP Review</title>
+    <meta name="description" content="API Project">
+    <meta name="author" content="Malcolm Ross">
+    <link rel="stylesheet" href="css/main.css?v=1.0">
+</head>
+<body>
+    <section id="container">
+        <form id="employeeForm">
+            <fieldset>
+                <div class="error" id="companyError"></div>
+                <div class="block">
+                    <label for="company">Company Name</label>
+                    <input type="text" id="company" value="Company Name" required
+                           onblur="if (this.value == '') {this.value = 'Company Name';}"
+                           onfocus="if (this.value == 'Company Name') {this.value = '';}" />
+                </div>
+
+                <div class="error" id="nameError"></div>
+                <div class="block">
+                    <label for="name">Employee Name</label>
+                    <input type="text" id="name" value="Your Name" required
+                           onblur="if (this.value == '') {this.value = 'Your Name';}"
+                           onfocus="if (this.value == 'Your Name') {this.value = '';}" />
+                </div>
+                <!--
+                <div class="error" id="ageError"></div>
+                <div class="block">
+                    <label for="age">Employee Age</label>
+                    <input type="text" id="age" value="Your Age" required
+                           onblur="if (this.value == '') {this.value = 'Your Age';}"
+                           onfocus="if (this.value == 'Your Age') {this.value = '';}" />
+                </div>
+                -->
+                <div class="error" id="positionError"></div>
+                <div class="block">
+                    <label for="position">Employee Position</label>
+                    <input type="text" id="position" value="Manager or Associate" required
+                           onblur="if (this.value == '') {this.value = 'Manager or Associate';}"
+                           onfocus="if (this.value == 'Manager or Associate') {this.value = '';}" />
+                </div>
+
+                <div class="error" id="hoursError"></div>
+                <div class="block">
+                    <label for="hours">Hours Worked For Past 3 Weeks</label>
+                    <input type="text" id="hours" value="Your Hours" required
+                           onblur="if (this.value == '') {this.value = 'Your Hours';}"
+                           onfocus="if (this.value == 'Your Hours') {this.value = '';}" />
+                </div>
+
+                <div class="error" id="vehicleError"></div>
+                <div class="block">
+                    <label for="vehicle">Vehicle</label>
+                    <input type="text" id="vehicle" value="Your Vehicle" required
+                           onblur="if (this.value == '') {this.value = 'Your Vehicle';}"
+                           onfocus="if (this.value == 'Your Vehicle') {this.value = '';}" />
+                </div>
+                <div class="error" id="displayError"></div>
+                <button class="btn" id="done" onclick="return false;">Done</button>
+                <button class="btn" id="add" onclick="return false;">Add</button>
+            </fieldset>
+            <div id="employeesList"></div>
+        </form>
+    </section>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
